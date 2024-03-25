@@ -160,7 +160,7 @@ nav ul li a:hover::after {
 
 /*Curriculo*/
 .curriculo{
-  background-color: rgba(221, 221, 221, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
+  background-color: rgba(0, 0, 0, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
   border-radius: 10px;
   border: 2px solid #ff0077;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -168,8 +168,10 @@ nav ul li a:hover::after {
   margin: 20px auto;
   padding: 20px;
   transition: transform 0.3s ease;
-  backdrop-filter: blur(5px); /* Aplica o efeito de borrado ao fundo */
+  backdrop-filter: blur(20px); /* Aplica o efeito de borrado ao fundo */
   display: flex; /* Torna os elementos filhos flexíveis */
+  font-weight: 200;
+  
 }
 
 .vertical-line {
@@ -179,4 +181,7 @@ nav ul li a:hover::after {
 
 .conteudo {
     flex: 1; /* Faz com que este elemento ocupe o espaço restante */
+}
+.info-pessoal{
+  text-align: center ;
 }
