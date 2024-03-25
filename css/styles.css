@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("background.jpg"); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-position: center; /* Centraliza a imagem no elemento */
+  color: #fff;
+}
+
+/*config navBar */
+nav {
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  position: relative; /* Adicionado */
+  transition: all 0.3s ease;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+  content: ''; /* Adicionado */
+  position: absolute; /* Adicionado */
+  width: 0; /* Alterado para 0 */
+  height: 0; /* Alterado para 0 */
+  background-color: transparent; /* Adicionado */
+  transition: all 0.3s ease; /* Adicionado */
+}
+
+nav ul li a::before {
+  top: 0; /* Ajustado */
+  left: -2px; /* Ajustado */
+  border-left: 2px solid magenta; /* Largura da borda reduzida para 2 pixels */
+  border-bottom: 2px solid magenta; /* Largura da borda reduzida para 2 pixels */
+}
+
+nav ul li a::after {
+  top: 0; /* Ajustado */
+  right: -2px; /* Ajustado */
+  border-right: 2px solid magenta; /* Largura da borda reduzida para 2 pixels */
+  border-top: 2px solid magenta; /* Largura da borda reduzida para 2 pixels */
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+  width: calc(70% + 4px); /* Adicionado */
+  height: calc(70% + 4px); /* Adicionado */
+}
+
+
+/*imgame da logo na navbar*/
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#logoOmega {
+  width: 70px;
+}
+
+/* cards para a pagina dos participantes*/
+
+.card-container {
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+.card {
+  background-color: rgba(221, 221, 221, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
+  border-radius: 10px;
+  border: 2px solid #ff0077;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(5px); /* Aplica o efeito de borrado ao fundo */
+}
+
+
+.card:hover {
+  transform: translateY(-5px); /* Efeito de levantamento ao passar o mouse */
+}
+
+.card img {
+  background-color: #ff0077;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 70%;
+  transition: transform 0.3s ease; 
+}
+
+.card img:hover {
+  transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
+.card-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff; /* Cor do texto modificada */
+}
+
+.card-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ccc; /* Cor do texto modificada */
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff0077;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionado transição para background-color e transform */
+}
+
+.button:hover {
+  background-color: #d5004d;
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.button:active {
+  background-color: #b3003d; /* Cor de fundo alterada ao clicar */
+  transform: scale(0.95); /* Efeito de encolhimento ao clicar */
+}
+.transition-link {
+  color: #ff0077; /* Cor do link */
+  text-decoration: none;
+  transition: opacity 0.5s ease; /* Transição suave */
+}
+
+.transition-link:focus {
+  outline: none; /* Remover a borda de foco */
+  opacity: 0.7; /* Reduzir a opacidade ao receber foco */
+}
+
+.transition-link:hover {
+  opacity: 0.7; /* Reduzir a opacidade ao passar o mouse */
+}
+
+
+/*Curriculo*/
+.curriculo{
+  background-color: rgba(221, 221, 221, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
+  border-radius: 10px;
+  border: 2px solid #ff0077;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(5px); /* Aplica o efeito de borrado ao fundo */
+  display: flex; /* Torna os elementos filhos flexíveis */
+}
+
+.vertical-line {
+    border-left: 3px solid white; /* Cor e espessura da linha */
+    margin: 0 20px; /* Margem para espaçamento entre os elementos */
+}
+
+.conteudo {
+    flex: 1; /* Faz com que este elemento ocupe o espaço restante */
+}
