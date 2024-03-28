@@ -4,7 +4,7 @@
 
 body {
   
-  background-color: #070120; /* Substitua pelo caminho da sua imagem */
+  background-color: #0b0713; /* Substitua pelo caminho da sua imagem */
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
   background-position: center; /* Centraliza a imagem no elemento */
   margin: 0;
@@ -14,16 +14,36 @@ body {
   
 }
 
-.top{
-  padding: 20px ;
+.wellcome{
+  background-image: url("/css/_809d8949-2459-4c7e-89cc-5db675fd8097.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Define a altura do elemento para ocupar toda a altura da janela do navegador */
+
+}
+
+
+.top {
+  background-color: rgba(2, 2, 2, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
+  border-radius: 10px;
+  border: 2px solid #fff;
+  padding: 20px;
   display: flex;
+  position: fixed; /* Fixa a posição da navbar */
+  top: 0; /* Fixa a navbar no topo da janela do navegador */
+  width: 100%; /* Define a largura da navbar como 100% da largura da janela */
+  z-index: 999; /* Define um valor alto para o z-index, colocando a navbar na frente de outros elementos */
 }
 /*config navBar */
+
 nav {
+  
   position: fixed;
   left: 30%;
   padding: 10px 200px;
   width: 100%;
+  backdrop-filter: blur(5px); 
+
 }
 
 
