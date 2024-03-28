@@ -1,17 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-image: url("background.jpg"); /* Substitua pelo caminho da sua imagem */
+  
+  background-color: #070120; /* Substitua pelo caminho da sua imagem */
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
   background-position: center; /* Centraliza a imagem no elemento */
-  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
+.top{
+  padding: 20px ;
+  display: flex;
+}
 /*config navBar */
 nav {
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 30%;
+  padding: 10px 200px;
+  width: 100%;
 }
+
 
 nav ul {
   margin: 0;
@@ -65,6 +79,7 @@ nav ul li a:hover::after {
 
 /*imgame da logo na navbar*/
 .logo {
+  
   font-size: 24px;
   font-weight: bold;
 }
@@ -75,103 +90,87 @@ nav ul li a:hover::after {
 
 /* cards para a pagina dos participantes*/
 
-.card-container {
-  display: flex; 
-  justify-content: center; 
-  flex-wrap: wrap; 
-}
-
 .card {
   background-color: rgba(221, 221, 221, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
   border-radius: 10px;
-  border: 2px solid #ff0077;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: 20px auto;
+  border: 2px solid #fff;
+  max-width: 80%;
+  margin: 100px auto;
   padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
   backdrop-filter: blur(5px); /* Aplica o efeito de borrado ao fundo */
+  display: flex; 
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
 }
-
 
 .card:hover {
-  transform: translateY(-5px); /* Efeito de levantamento ao passar o mouse */
+  height: 400px;
 }
 
-.card img {
-  background-color: #ff0077;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  width: 70%;
-  transition: transform 0.3s ease; 
+.card .img-box {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  top: 0px;
+  transition: 0.5s;
 }
 
-.card img:hover {
-  transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+.card:hover .img-box {
+  top: -100px;
+  scale: 0.75;
 }
 
-.card-content h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #fff; /* Cor do texto modificada */
+.card .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card-content p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #ccc; /* Cor do texto modificada */
-}
-
-.button {
-  display: inline-block;
-  background-color: #ff0077;
+.card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  padding: 0px 30px;
+  text-align: center;
   color: #fff;
-  padding: 10px 20px;
+  height: 70px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  top: 130px;
+  height: 250px;
+}
+
+.card .read-more {
+  background: linear-gradient(90deg, #3730a3, #7e22ce);
+  padding: 12px;
+  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionado transição para background-color e transform */
+  border-radius: 8px;
+  width: 200px;
+  margin-left: 60px;
 }
-
-.button:hover {
-  background-color: #d5004d;
-  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
-}
-
-.button:active {
-  background-color: #b3003d; /* Cor de fundo alterada ao clicar */
-  transform: scale(0.95); /* Efeito de encolhimento ao clicar */
-}
-.transition-link {
-  color: #ff0077; /* Cor do link */
-  text-decoration: none;
-  transition: opacity 0.5s ease; /* Transição suave */
-}
-
-.transition-link:focus {
-  outline: none; /* Remover a borda de foco */
-  opacity: 0.7; /* Reduzir a opacidade ao receber foco */
-}
-
-.transition-link:hover {
-  opacity: 0.7; /* Reduzir a opacidade ao passar o mouse */
-}
-
 
 /*Curriculo*/
 .curriculo{
-  background-color: rgba(0, 0, 0, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
+  background-color: rgba(221, 221, 221, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
   border-radius: 10px;
   border: 2px solid #ff0077;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   max-width: 80%;
   margin: 20px auto;
   padding: 20px;
-  transition: transform 0.3s ease;
-  backdrop-filter: blur(20px); /* Aplica o efeito de borrado ao fundo */
+  backdrop-filter: blur(5px); /* Aplica o efeito de borrado ao fundo */
   display: flex; /* Torna os elementos filhos flexíveis */
-  font-weight: 200;
-  
 }
 
 .vertical-line {
@@ -182,6 +181,5 @@ nav ul li a:hover::after {
 .conteudo {
     flex: 1; /* Faz com que este elemento ocupe o espaço restante */
 }
-.info-pessoal{
-  text-align: center ;
-}
+
+
