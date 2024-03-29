@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1149.72 384">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1" data-name="Camada 1">
+    <image width="512" height="512" transform="translate(765.72) scale(.75)" xlink:href="../../../Downloads/seta-para-baixo (2).png"/>
+  </g>
+  <g id="Camada_2" data-name="Camada 2">
+    <g>
+      <polygon class="cls-1" points="2.9 173.35 147.68 318.13 291.29 171.78 290.9 232.83 146.9 374.48 2.51 232.04 2.9 173.35"/>
+      <polygon class="cls-1" points="6.99 33.61 151.77 178.39 295.38 32.04 294.99 93.08 150.99 234.74 6.6 92.3 6.99 33.61"/>
+    </g>
+  </g>
+</svg>

@@ -1,9 +1,12 @@
 
 /*Curriculo*/
 .curriculo{
+    position: absolute;
+    top: 150px;
+    left: 100px;
     background-color: rgba(221, 221, 221, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
     border-radius: 10px;
-    border: 2px solid #ff0077;
+    border: 2px solid white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 80%;
     margin: 20px auto;
@@ -18,8 +21,34 @@
   }
   
   .conteudo {
+    animation: aparecer-text 2s ease forwards;
       flex: 1; /* Faz com que este elemento ocupe o espaço restante */
   }
+
+  .curriculo img{
+    background-color: rgb(240, 231, 220);
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+  }
+  
+  h2, p, ul{
+    text-align: justify;
+    text-indent: 10px;
+    color: white;
+  }
+
+  @keyframes aparecer-text {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
   
   
   

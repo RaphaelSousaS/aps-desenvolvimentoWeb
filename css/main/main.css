@@ -2,23 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+html{
+  scroll-behavior: smooth !important;
+}
 
 body {
   
-  background-color: #0b0713; /* Substitua pelo caminho da sua imagem */
+  background-color: #040c1d; /* Substitua pelo caminho da sua imagem */
   background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
-  background-position: center; /* Centraliza a imagem no elemento */
+  background-position: center ; /* Centraliza a imagem no elemento */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins' ;
 }
 
 
 .wellcome{
   background-image: url("/imagens/ceu.svg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   width: 100vw;
   height: 100vh; /* Define a altura do elemento para ocupar toda a altura da janela do navegador */
 
@@ -26,8 +29,8 @@ body {
 
 
 
-.teste h1 {
-  font-family: 'Bebas',sans-serif;
+.bemVindo h1 {
+  font-family: 'Bebas';
   opacity: 0;
   transform: translateY(20px); /* Move o texto 20 pixels para baixo inicialmente */
   color: white;
@@ -41,7 +44,7 @@ body {
   
 }
 
-.teste p {
+.bemVindo p {
   opacity: 0;
   transform: translateY(20px); /* Move o texto 20 pixels para baixo inicialmente */
   color: white;
@@ -54,25 +57,33 @@ body {
 }
 
 
-.seta-down{
+.seta-down {
   animation: aparecer 2s forwards, levitando 1s ease-in-out alternate infinite;
-
-  
-  position: absolute;
-  top: 650px;
+  position: relative; /* Definindo o posicionamento relativo */
   width: 100vw;
   text-align: center;
-  
 }
-.seta-down img{
-  width: 50px;
+
+.seta-down img {
+  width: 100px;
   height: auto;
-  
+  position: absolute; /* Definindo o posicionamento absoluto */
+  top: -350px;
+  left: 0;
+  right: 0;
+  margin: auto; /* Definindo margens automáticas */
 }
 
 .text-descricao{
+  opacity: 0;
+  animation: aparecer-text-desscricao 2s ease forwards;
+  animation-delay: 1s;
+  position: absolute;
+  top: 500px;
+  left: 1200px;
+  right: 50px;
   color: white;
-  font-family: 'Bebas',sans-serif;
+  font-family: 'Bebas';
 
 }
 
@@ -91,6 +102,17 @@ body {
 @keyframes levitando{
   from{
     transform: translateY(30px);
+  }
+}
+
+@keyframes aparecer-text-desscricao {
+  from {
+    opacity: 0;
+    transform: translateX(50px); /* Mantém o texto 20 pixels para baixo no início da animação */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Move o texto de volta para a posição padrão */
   }
 }
 

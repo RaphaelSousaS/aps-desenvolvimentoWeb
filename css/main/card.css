@@ -1,3 +1,10 @@
+
+.cards{
+  display: flex;
+}
+
+
+
 .card {
   
     background-color: rgba(221, 221, 221, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
@@ -26,7 +33,19 @@
     height: auto;
     top: 0px;
     transition: 0.5s;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do círculo */
+    border-radius: 50%; /* Transforma o elemento em um círculo */
   }
+  .card .img-box img {
+    width: 100%; /* Ocupa toda a largura do elemento pai (círculo) */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Garante que a imagem siga a forma do círculo */
+    background-color: rgb(214, 235, 235); /* Define o fundo rosa */
+}
+  
   
   .card:hover .img-box {
     top: -100px;
