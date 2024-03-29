@@ -1,0 +1,25 @@
+
+/*Curriculo*/
+.curriculo{
+    background-color: rgba(221, 221, 221, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
+    border-radius: 10px;
+    border: 2px solid #ff0077;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    backdrop-filter: blur(5px); /* Aplica o efeito de borrado ao fundo */
+    display: flex; /* Torna os elementos filhos flexíveis */
+  }
+  
+  .vertical-line {
+      border-left: 3px solid white; /* Cor e espessura da linha */
+      margin: 0 20px; /* Margem para espaçamento entre os elementos */
+  }
+  
+  .conteudo {
+      flex: 1; /* Faz com que este elemento ocupe o espaço restante */
+  }
+  
+  
+  

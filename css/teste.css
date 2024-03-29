@@ -1,0 +1,28 @@
+
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px); /* Define a quantidade que irá subir */
+    }
+  }
+  
+  .teste:hover {
+    cursor: pointer;
+  }
+  
+
+  
+  .teste a.read-more {
+    display: block;
+    margin-top: 10px;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .teste a.read-more:hover {
+    text-decoration: underline;
+  }
+  
