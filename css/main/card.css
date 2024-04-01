@@ -1,19 +1,21 @@
 
 .cards{
   display: flex;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 
 
 
 .card {
   
-    background-color: rgba(221, 221, 221, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
+    background-color: rgba(221, 221, 221, 0.2); 
     border-radius: 10px;
     border: 2px solid #fff;
     max-width: 80%;
     margin: 100px auto;
     padding: 20px;
-    backdrop-filter: blur(5px); /* Aplica o efeito de borrado ao fundo */
+    backdrop-filter: blur(5px);
     display: flex; 
     justify-content: center;
     width: 350px;
@@ -36,14 +38,14 @@
     position: relative;
     width: 250px;
     height: 250px;
-    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do círculo */
-    border-radius: 50%; /* Transforma o elemento em um círculo */
+    overflow: hidden; 
+    border-radius: 50%;
   }
   .card .img-box img {
-    width: 100%; /* Ocupa toda a largura do elemento pai (círculo) */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 50%; /* Garante que a imagem siga a forma do círculo */
-    background-color: rgb(214, 235, 235); /* Define o fundo rosa */
+    width: 100%; 
+    height: auto; 
+    border-radius: 50%; 
+    background-color: rgb(214, 235, 235); 
 }
   
   
@@ -85,7 +87,7 @@
     text-decoration: none;
     border-radius: 8px;
     width: 200px;
-    margin-left: 60px;
+    margin-left: 80px;
     transition: 2s;
   }
   

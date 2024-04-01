@@ -5,7 +5,7 @@
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-10px); /* Define a quantidade que irá subir */
+      transform: translateY(-10px); 
     }
   }
   

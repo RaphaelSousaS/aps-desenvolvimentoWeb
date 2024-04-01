@@ -8,9 +8,9 @@ html{
 
 body {
   
-  background-color: #040c1d; /* Substitua pelo caminho da sua imagem */
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
-  background-position: center ; /* Centraliza a imagem no elemento */
+  background-color: #040c1d; 
+  background-size: cover; 
+  background-position: center ; 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,11 +19,11 @@ body {
 
 
 .wellcome{
-  background-image: url("/imagens/ceu.svg");
+  background-image: url("/imagens/principal.png");
   background-size: cover;
   background-position: center center;
   width: 100vw;
-  height: 100vh; /* Define a altura do elemento para ocupar toda a altura da janela do navegador */
+  height: 100vh; 
 
 }
 
@@ -32,7 +32,7 @@ body {
 .bemVindo h1 {
   font-family: 'Bebas';
   opacity: 0;
-  transform: translateY(20px); /* Move o texto 20 pixels para baixo inicialmente */
+  transform: translateY(20px); 
   color: white;
   position: absolute ;
   top: 150px;
@@ -40,26 +40,26 @@ body {
   height: auto;
   text-align: center;
   font-size: 80px;
-  animation: aparecer 2s forwards; /* Adiciona a animação de aparecimento */
+  animation: aparecer 2s forwards; 
   
 }
 
 .bemVindo p {
   opacity: 0;
-  transform: translateY(20px); /* Move o texto 20 pixels para baixo inicialmente */
+  transform: translateY(20px); 
   color: white;
   position: absolute;
   top: 300px;
   width: 100vw;
   height: auto;
   text-align: center;
-  animation: aparecer 2s forwards; /* Adiciona a animação de aparecimento */
+  animation: aparecer 2s forwards; 
 }
 
 
 .seta-down {
   animation: aparecer 2s forwards, levitando 1s ease-in-out alternate infinite;
-  position: relative; /* Definindo o posicionamento relativo */
+  position: relative; 
   width: 100vw;
   text-align: center;
 }
@@ -67,11 +67,11 @@ body {
 .seta-down img {
   width: 100px;
   height: auto;
-  position: absolute; /* Definindo o posicionamento absoluto */
+  position: absolute; 
   top: -350px;
   left: 0;
   right: 0;
-  margin: auto; /* Definindo margens automáticas */
+  margin: auto; 
 }
 
 .text-descricao{
@@ -87,15 +87,71 @@ body {
 
 }
 
+:root{
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+}
+
+footer{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.75px;
+  width: 100%;
+  background-color: var(--color-neutral-40);
+}
+
+#footer_content {
+  background-color: var(--color-neutral-10);
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  padding: 4rem 3.5rem;
+  color: var(--color-neutral-40);
+}
+
+#footer_contacts h1{
+  margin-bottom: 0.75rem; 
+  margin-top: 0.5rem;
+}
+
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  line-height: 3px;
+}
+
+.footer-inter {
+  color: #a8a29e;
+}
+
+#footer_logo {
+  margin-top: 10%;
+  margin-left: 80%;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-neutral-0);
+  font-size: 0.9rem;
+  color: var(--color-neutral-30);
+  padding: 1rem;
+}
+
 
 @keyframes aparecer {
   from {
     opacity: 0;
-    transform: translateY(50px); /* Mantém o texto 20 pixels para baixo no início da animação */
+    transform: translateY(50px); 
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Move o texto de volta para a posição padrão */
+    transform: translateY(0); 
   }
 }
 
@@ -108,11 +164,11 @@ body {
 @keyframes aparecer-text-desscricao {
   from {
     opacity: 0;
-    transform: translateX(50px); /* Mantém o texto 20 pixels para baixo no início da animação */
+    transform: translateX(50px); 
   }
   to {
     opacity: 1;
-    transform: translateX(0); /* Move o texto de volta para a posição padrão */
+    transform: translateX(0); 
   }
 }
 

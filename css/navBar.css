@@ -1,10 +1,10 @@
 .top nav {
-    background-color: rgba(37, 37, 37, 0.2); /* Cor de fundo com transparência para criar o efeito de borrado */
+    background-color: rgba(37, 37, 37, 0.2); 
     border-radius: 10px;
     padding: 20px;
-    position: fixed; /* Fixa a posição da navbar */
-    top: 0; /* Fixa a navbar no topo da janela do navegador */
-    z-index: 999; /* Define um valor alto para o z-index, colocando a navbar na frente de outros elementos */
+    position: fixed; 
+    top: 0; 
+    z-index: 999; 
     width: 100vw;
     height: auto;
     text-align: center;
@@ -31,15 +31,15 @@
     color: #fff;
     text-decoration: none;
     padding: 10px;
-    position: relative; /* Adicionado */
+    position: relative; 
     transition: all 0.3s ease;
     border-bottom: 3px solid transparent;
     transition: all 0.25s ease-in-out;
   }
 
   nav ul li a:hover {
-    color: #ccc; /* Cor cinza quando hover */
-    border-bottom-color: white; /* Adiciona a linha branca abaixo do link */
+    color: #ccc; 
+    border-bottom-color: white; 
   }
   
 

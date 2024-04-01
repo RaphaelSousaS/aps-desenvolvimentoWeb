@@ -6,9 +6,9 @@
 
 body {
   
-  background-color: #040c1d; /* Substitua pelo caminho da sua imagem */
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
-  background-position: center ; /* Centraliza a imagem no elemento */
+  background-color: #040c1d;
+  background-size: cover; 
+  background-position: center ; 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
