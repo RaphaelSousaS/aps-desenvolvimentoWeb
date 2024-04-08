@@ -84,7 +84,6 @@ body {
   right: 50px;
   color: white;
   font-family: 'Bebas';
-
 }
 
 :root{
@@ -106,8 +105,8 @@ footer{
 #footer_content {
   background-color: var(--color-neutral-10);
   display: grid; 
-  grid-template-columns: repeat(4, 1fr); 
-  padding: 4rem 3.5rem;
+  grid-template-columns: repeat(3, 1fr); 
+  padding: 3rem 3.5rem;
   color: var(--color-neutral-40);
 }
 
@@ -127,6 +126,7 @@ footer{
 
 .footer-inter {
   color: #a8a29e;
+
 }
 
 #footer_logo {
